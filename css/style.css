@@ -36,7 +36,7 @@ input {
 }
 
 .search {
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 .search .form-control {
   outline: none;
@@ -47,14 +47,14 @@ input {
 }
 
 .our-candidates {
-  padding: 50px 0;
+  padding: 50px 0 0;
   text-align: center;
 }
 .our-candidates .my-candidates {
-  width: 23%;
+  padding: 10px;
   background: #fff;
   text-align: center;
-  margin: 5px 5px;
+  margin: 5px -5px;
   border-radius: 10px;
   box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
   transition: 0.6s;
@@ -65,11 +65,6 @@ input {
 .our-candidates .my-candidates:hover .candidates-titel {
   color: #f5790b;
 }
-@media only screen and (max-width: 767px) {
-  .our-candidates .my-candidates {
-    width: 100%;
-  }
-}
 .our-candidates .my-candidates .image-candidates {
   margin: 15px 0;
 }
@@ -77,7 +72,7 @@ input {
   margin: 15px 0;
 }
 .our-candidates .my-candidates .candidates-titel a h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #000;
   transition: 0.6s;
@@ -86,125 +81,6 @@ input {
   font-weight: 600;
   font-size: 1rem;
   opacity: 0.8;
-}
-
-.TemleaderCANDIDATES {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.card {
-  width: 300px;
-  height: 300px;
-  background: #fff;
-  background-image: radial-gradient(#206a5d 5%, #fff 15%, #8AC03C 60%);
-}
-
-.card .image {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.card .image img {
-  width: 100%;
-  text-align: center;
-  top: 80%;
-  left: 50%;
-  transform: translate(-37%, -2%);
-  transition: 0.5s;
-}
-
-.card:hover .image img {
-  opacity: 0.5;
-  transform: translateX(30%);
-  /*100%*/
-}
-
-.card .details {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  /*100%*/
-  height: 100%;
-  background: #8AC03C;
-  transition: 0.5s;
-  transform-origin: left;
-  transform: perspective(2000px) rotateY(-90deg);
-}
-
-.card:hover .details {
-  transform: perspective(2000px) rotateY(0deg);
-}
-
-.card .details .center {
-  padding: 20px;
-  text-align: center;
-  background: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.card .details .center h1 {
-  margin: 0;
-  padding: 0;
-  color: #000;
-  line-height: 20px;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.card .details .center h1 span {
-  font-size: 14px;
-  color: #262626;
-}
-
-.card .details .center ul {
-  margin: 5px auto 0;
-  padding: 0;
-  display: table;
-}
-
-.card .details .center ul li {
-  list-style: none;
-  margin: 0 5px;
-  float: left;
-}
-
-.card .details .center ul li a {
-  display: block;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  line-height: 22px;
-  text-align: center;
-  transform: 0.5s;
-}
-
-.fa-twitter {
-  color: #1da1f2;
-}
-
-.fa-instagram {
-  color: #c13584;
-}
-
-.fa-google-plus {
-  color: #ff3636;
-}
-
-.fa-facebook-f {
-  color: #3b5998;
-}
-
-.fa-linkedin {
-  color: #0077b5;
-}
-
-.google {
-  color: #dd4b39;
 }
 
 /*# sourceMappingURL=style.css.map */
